@@ -123,4 +123,25 @@ Assegura't que el frontend pot comunicar-se correctament amb el backend fent una
 - [Commit 1](https://github.com/Francescse/Consultoria/commit/a855f4de890b915d8cf8db507406b9846c559e37): Initial commit.
 - [Commit 2](https://github.com/Francescse/Consultoria/commit/28609c986ec29bf58077882add83f2e12b3aec1d): Initial commit.
 - [Commit 3](https://github.com/Francescse/Consultoria/commit/9ed5a45b271f33c5f1afb294625e365d9067c917): Commit de tots els canvis locals.
+Sí, pots afegir la secció dels avenços assolits fins ara al final del README actual. Aquí tens el contingut per afegir:
+
+### Avanços Fets Fins Ara
+- **Formulari de contacte**:
+  - Afegit camps per al nom, email, missatge, telèfon i empresa.
+  - Actualitzat `src/Contact.js` amb els nous camps.
+- **Configuració del proxy**:
+  - Resolt un error de proxy entre el frontend i el backend.
+  - Backend funcionant a `localhost:3000` i frontend a `localhost:3001`.
+
+### Properes Tasques
+1. **Crear i implementar funcionalitats addicionals**:
+   - Continuar desenvolupant noves funcionalitats segons les necessitats del projecte.
+2. **Documentar el codi**:
+   - Assegura't que cada nova funcionalitat estigui ben documentada en el codi i en el README.
+3. **Proves i verificació**:
+   - Escriure tests per verificar el correcte funcionament del codi afegit.
+4. **Revisar i fer commit dels canvis**:
+   - Fer commit regularment dels canvis i assegurar-te que el projecte es manté actualitzat en el repositori.
+
+Pots afegir aquest contingut al final del teu README per tal de deixar constància dels progressos i tenir una guia clara per continuar el desenvolupament.
 
