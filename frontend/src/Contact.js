@@ -1,33 +1,43 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import NavigationBar from './Navbar';
-import Home from './Home';
-import Contact from './Contact';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { Form, Button, Container } from 'react-bootstrap';
 
-function App() {
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    fetch('/api/test')
-      .then(response => response.json())
-      .then(data => setMessage(data.message));
-  }, []);
-
+const Contact = () => {
   return (
-    <Router>
-      <div className="App">
-        <NavigationBar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <header className="App-header">
-          <p>{message}</p>
-        </header>
-      </div>
-    </Router>
-  );
-}
+    <Container>
+      <h2>Contacte</h2>
+      <Form>
+        <Form.Group controlId="formName">
+          <Form.Label>Nom</Form.Label>
+          <Form.Control type="text" placeholder="Introdueix el teu nom" />
+        </Form.Group>
 
-export default App;
+        <Form.Group controlId="formEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control type="email" placeholder="Introdueix el teu email" />
+        </Form.Group>
+
+        <Form.Group controlId="formMessage">
+          <Form.Label>Missatge</Form.Label>
+          <Form.Control as="textarea" rows={3} placeholder="Escriu el teu missatge" />
+        </Form.Group>
+
+        {/* Nous camps afegits */}
+        <Form.Group controlId="formPhone">
+          <Form.Label>Telèfon</Form.Label>
+          <Form.Control type="tel" placeholder="Introdueix el teu telèfon" />
+        </Form.Group>
+
+        <Form.Group controlId="formCompany">
+          <Form.Label>Empresa</Form.Label>
+          <Form.Control type="text" placeholder="Introdueix el nom de la teva empresa" />
+        </Form.Group>
+
+        <Button variant="primary" type="submit">
+          Enviar
+        </Button>
+      </Form>
+    </Container>
+  );
+};
+
+export default Contact;
