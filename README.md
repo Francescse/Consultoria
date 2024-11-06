@@ -1,4 +1,4 @@
-# Consultoria
+### README del Projecte Consultoria
 
 ## Descripció del Projecte
 Aquest projecte consisteix en la creació d'una aplicació web per a l'optimització de processos industrials i de serveis (hotelera, alimentació, logística, entre d'altres). Ens enfoquem en l'avaluació i millora contínua dels processos departamentals utilitzant les metodologies Lean i Six Sigma.
@@ -60,11 +60,67 @@ Aquest projecte consisteix en la creació d'una aplicació web per a l'optimitza
 - Generació de recomanacions personalitzades.
 - Creació de gràfics i diagrames per a la visualització dels resultats.
 
+## Configuració del Projecte
+
+### Estructura Inicial del Projecte
+L'estructura inicial del projecte inclou els següents directoris i fitxers:
+```
+Consultoria/
+├── backend/
+│   ├── server.js
+│   └── package.json
+└── frontend/
+    ├── src/
+    │   ├── App.js
+    │   └── index.js
+    ├── public/
+    │   └── index.html
+    └── package.json
+```
+
+### Configuració del Backend amb Node.js i Express
+Navega a la carpeta `backend` i inicialitza un projecte Node.js:
+```sh
+cd backend
+npm init -y
+npm install express
+```
+Afegeix el següent contingut a `server.js` per crear un servidor bàsic amb Express:
+```js
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hola món!');
+});
+
+app.listen(port, () => {
+  console.log(`Servidor en funcionament a http://localhost:${port}/`);
+});
+```
+
+### Configuració del Frontend amb React
+Navega a la carpeta `frontend` i crea una aplicació React:
+```sh
+npx create-react-app .
+```
+Assegura't que els fitxers `App.js` i `index.js` estan a la carpeta `src` i `index.html` està a la carpeta `public`.
+
+### Configuració del Proxy per al Desenvolupament
+Per habilitar la comunicació entre el frontend i el backend durant el desenvolupament, afegeix una configuració de proxy en el `package.json` de la carpeta `frontend`:
+```json
+"proxy": "http://localhost:3000"
+```
+
+### Rutes d'API i Peticions
+Crea rutes d'API al backend i fes peticions des del frontend per provar la comunicació.
+
+### Verificació de la Comunicació
+Assegura't que el frontend pot comunicar-se correctament amb el backend fent una petició de prova i verificant la resposta.
+
 ## Avanços Fets Fins Ara
 - [Commit 1](https://github.com/Francescse/Consultoria/commit/a855f4de890b915d8cf8db507406b9846c559e37): Initial commit.
 - [Commit 2](https://github.com/Francescse/Consultoria/commit/28609c986ec29bf58077882add83f2e12b3aec1d): Initial commit.
 - [Commit 3](https://github.com/Francescse/Consultoria/commit/9ed5a45b271f33c5f1afb294625e365d9067c917): Commit de tots els canvis locals.
 
----
-
-Després, pots respondre les preguntes necessàries per continuar amb el desenvolupament.
