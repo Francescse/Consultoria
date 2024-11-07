@@ -1,16 +1,15 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 5000;
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+app.use(express.json());
 
-// Nova ruta d'API
-app.get('/api/test', (req, res) => {
-  res.json({ message: 'Això és una resposta de l\'API' });
+app.post('/submit', (req, res) => {
+  const formData = req.body;
+  console.log('Received form data:', formData);
+  res.json({ message: 'Form data received successfully' });
 });
 
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
+  console.log(`Server is running on port ${port}`);
 });
