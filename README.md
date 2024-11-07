@@ -143,5 +143,61 @@ Sí, pots afegir la secció dels avenços assolits fins ara al final del README 
 4. **Revisar i fer commit dels canvis**:
    - Fer commit regularment dels canvis i assegurar-te que el projecte es manté actualitzat en el repositori.
 
-Pots afegir aquest contingut al final del teu README per tal de deixar constància dels progressos i tenir una guia clara per continuar el desenvolupament.
+# Projecte Consultoria
+
+## Descripció del Projecte
+Aquest projecte consisteix en la creació d'una aplicació web per a l'optimització de processos industrials i de serveis (hotelera, alimentació, logística, entre d'altres). Ens enfoquem en l'avaluació i millora contínua dels processos departamentals utilitzant les metodologies Lean i Six Sigma, i complint les normes ISO.
+
+## Objectius Principals
+- Realitzar un estudi exhaustiu de les eines d'anàlisi utilitzades en les pràctiques de Lean i Six Sigma.
+- Conèixer i aplicar les normes ISO 9001, 14001 i 28000.
+- Crear una aplicació web que faciliti l'assessoria en l'optimització de processos.
+
+## Canvi de Direcció i Sectorització del Projecte
+A partir d'ara, el projecte es sectoritza per abordar els avanços de manera més estructurada. Tot i que els mòduls seran independents, l'objectiu final és que puguin interactuar i confluir en una única aplicació integrada.
+
+### 1. Sectorització de l'Aplicació
+- **Hoteleria**: Recepció, housekeeping, restauració, compres i manteniment.
+- **Logística**: Operacions, magatzematge, distribució, servei al client.
+- **Altres sectors**: A desenvolupar segons les necessitats específiques.
+
+### 2. Recollida de Dades del Client
+- Nom
+- Adreça
+- Sector
+- Activitat empresarial
+- Nombre d'empleats
+- Volum de negoci
+- Objectius clau
+- Departaments
+- Problemes identificats
+- Indicadors de productivitat
+- Qualitat
+- Temps de cicle
+
+### 3. Documents Estructurats Exportables
+- Informació preliminar sobre les necessitats del client.
+- Indicadors de productivitat, qualitat, temps de cicle.
+- Informe preliminar de resultats amb gràfics i diagrames.
+
+### 4. Pla d'Actuació
+- Implementació de millores.
+- Assignació de responsables.
+- Establiment de KPI.
+- Eines informàtiques recomanades (p. ex., Power BI, Microsoft Visio, Trello, Asana).
+
+### 5. Fases del Procés de Consultoria
+- Fase 1: Reunió inicial i recopilació de dades.
+- Fase 2: Anàlisi preliminar i proposta d'actuació.
+- Fase 3: Implementació de les millores i seguiment dels resultats.
+- Fase 4: Informe final amb els resultats, recomanacions i beneficis obtinguts.
+
+### 6. Integració de la IA en l'Aplicació
+- Anàlisi de dades per identificar àrees de millora.
+- Generació de recomanacions personalitzades.
+- Creació de gràfics i diagrames per a la visualització dels resultats.
+
+## Configuració del Projecte
+
+### Estructura Inicial del Projecte
 
