@@ -200,4 +200,19 @@ A partir d'ara, el projecte es sectoritza per abordar els avanços de manera mé
 ## Configuració del Projecte
 
 ### Estructura Inicial del Projecte
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
